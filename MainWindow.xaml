@@ -1,0 +1,149 @@
+﻿<Window x:Class="Aesthetics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aesthetics"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200" WindowStyle="None" Background="Black" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+    <Grid>
+        <StackPanel Height="70" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1200" Orientation="Horizontal">
+            <Button Content="" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,-6,0,0" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/icons8-menu-67.png"/>
+                </Button.Background>
+            </Button>
+            <Grid Width="120" HorizontalAlignment="Left" Margin="70,0,0,0">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="BTC" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="$28,240.08" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False" FontWeight="Bold"/>
+            </Grid>
+            <Grid Width="100">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="BTC.0" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="47.76" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False" FontWeight="Bold"/>
+            </Grid>
+            <Grid Width="120">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="S&amp;P 500" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="4,109.31" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False" FontWeight="Bold"/>
+            </Grid>
+            <Grid Width="100">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="UNINDEX" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="1079.28" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False" FontWeight="Bold"/>
+            </Grid>
+            <Path Data="M752.16667,3.8333333 L752.16667,64.17035" Fill="#FFF4F4F5" Height="40" Stroke="White" Stretch="Fill" Width="1" StrokeThickness="0.5" Margin="20,0,0,0"/>
+            <Grid Width="120" Margin="30,0,0,0">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="BALANCE" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="1.59223 BTC" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False" FontWeight="Bold"/>
+            </Grid>
+            <Grid Width="130">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="1D CHANGE" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="+2.56%" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False" FontWeight="Bold"/>
+            </Grid>
+            <Ellipse Height="50" Stroke="Black" Width="50" Margin="150,0,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/simon-lohmann-0KAEhUHvcmQ-unsplash.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Grid Width="104" Margin="10,0,0,0">
+                <TextBlock HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="QUAN" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" FontWeight="Bold"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="#4015" VerticalAlignment="Top" Foreground="White" FontFamily="Courier New" IsEnabled="False"/>
+            </Grid>
+        </StackPanel>
+        <Rectangle HorizontalAlignment="Left" Height="139" Margin="10,102,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Fill="#FF7397C1"/>
+        <Rectangle HorizontalAlignment="Left" Height="130" Margin="10,252,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Fill="#FF212122"/>
+        <Rectangle HorizontalAlignment="Left" Height="398" Margin="10,392,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Fill="#FF212122"/>
+        <Rectangle HorizontalAlignment="Left" Height="280" Margin="303,102,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Fill="#FF212122"/>
+        <Rectangle HorizontalAlignment="Left" Height="280" Margin="596,102,0,0" Stroke="Black" VerticalAlignment="Top" Width="594" Fill="#FF212122"/>
+        <Rectangle HorizontalAlignment="Left" Height="224" Margin="596,394,0,0" Stroke="Black" VerticalAlignment="Top" Width="301" Fill="#FF212122"/>
+        <Rectangle HorizontalAlignment="Left" Height="224" Margin="910,394,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Fill="#FF212122"/>
+        <Rectangle HorizontalAlignment="Left" Height="160" Margin="596,630,0,0" Stroke="Black" VerticalAlignment="Top" Width="594" Fill="#FFF9F9F8"/>
+        <hc:Carousel IsCenter="True" AutoRun="True" Height="394" VerticalAlignment="Center" Margin="305,382,617,0">
+            <Image Width="280" Stretch="UniformToFill" Source="/1.png" Height="400"/>
+            <Image Width="280" Stretch="UniformToFill" Source="/2.png" Height="400"/>
+            <Image Width="280" Stretch="UniformToFill" Source="/3.png" Height="400"/>
+        </hc:Carousel>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="28,125,0,0" TextWrapping="Wrap" Text="TODAY'S FOCUS" VerticalAlignment="Top" Width="153" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="66" Margin="28,161,0,0" TextWrapping="Wrap" Text="1.8" VerticalAlignment="Top" Width="153" FontFamily="Courier New" FontSize="48" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="253,210,0,0" TextWrapping="Wrap" Text="6H" VerticalAlignment="Top" Width="37" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="218,204,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-up-48 (1).png"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="28,265,0,0" TextWrapping="Wrap" Text="COMPLETED TASKS" VerticalAlignment="Top" Width="220" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="66" Margin="28,301,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="153" FontFamily="Courier New" FontSize="48" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="253,350,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="37" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="218,344,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-up-48 (1).png"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="28,415,0,0" TextWrapping="Wrap" Text="MJ FAST HOURS" VerticalAlignment="Top" Width="176" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="242,410,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-send-letter-50 (1).png"/>
+        <TextBlock HorizontalAlignment="Left" Height="86" Margin="28,486,0,0" TextWrapping="Wrap" Text="6.9" VerticalAlignment="Top" Width="153" FontFamily="Courier New" FontSize="72" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="243,530,0,0" TextWrapping="Wrap" Text="15H" VerticalAlignment="Top" Width="37" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="208,524,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-up-48 (1).png"/>
+        <Path Data="M28,591 L272,591" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="28,591,0,0" Stroke="White" Stretch="Fill" VerticalAlignment="Top" Width="245" StrokeThickness="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="28,601,0,0" TextWrapping="Wrap" Text="LATEST WORKS" VerticalAlignment="Top" Width="176" FontFamily="Cascadia Mono Light" FontSize="14" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Left" Height="60" Margin="28,632,0,0" VerticalAlignment="Top" Width="60">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/robbie-down-f3vwAXn7pgg-unsplash.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="60" Margin="104,632,0,0" VerticalAlignment="Top" Width="60">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/amir-esrafili-MH-rzUA0Cw4-unsplash.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="60" Margin="178,632,0,0" VerticalAlignment="Top" Width="60">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/brivel-bariki-W12rukDSuxc-unsplash.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="60" Margin="28,710,0,0" VerticalAlignment="Top" Width="60">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/bekah-allmark-Qt0ogPnhGWY-unsplash.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="60" Margin="104,710,0,0" VerticalAlignment="Top" Width="60">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/anastasia-mihalkova-rHWnVWrDUto-unsplash.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="60" Margin="178,710,0,0" VerticalAlignment="Top" Width="60">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="321,125,0,0" TextWrapping="Wrap" Text="PAID INVOICES" VerticalAlignment="Top" Width="220" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="89" Margin="321,219,0,0" TextWrapping="Wrap" Text="24" VerticalAlignment="Top" Width="153" FontFamily="Courier New" FontSize="72" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="532,258,0,0" TextWrapping="Wrap" Text="32" VerticalAlignment="Top" Width="37" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="497,252,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-up-48 (1).png"/>
+        <Path Data="M321,313 L560.03347,313" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="321,313,0,0" Stroke="White" Stretch="Fill" VerticalAlignment="Top" Width="240" StrokeThickness="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="321,329,0,0" TextWrapping="Wrap" Text="TOTAL" VerticalAlignment="Top" Width="76" FontFamily="Cascadia Mono Light" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="402,329,0,0" TextWrapping="Wrap" Text="$6,000 / 12,000" VerticalAlignment="Top" Width="159" FontFamily="Cascadia Mono Light" FontWeight="Bold" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="619,125,0,0" TextWrapping="Wrap" Text="TOTAL BALANCES (BTC)" VerticalAlignment="Top" Width="220" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="89" Margin="619,267,0,0" TextWrapping="Wrap" Text="1.592" VerticalAlignment="Top" Width="239" FontFamily="Cascadia Mono" FontSize="72" FontWeight="Bold"/>
+
+        <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Top" Margin="858,208,12,420">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="" Labels="{Binding Labels}"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="" LabelFormatter="{Binding Formatter}"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="619,421,0,0" TextWrapping="Wrap" Text="TOTAL BALANCES (BTC)" VerticalAlignment="Top" Width="220" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="66" Margin="619,506,0,0" TextWrapping="Wrap" Text="5.01" VerticalAlignment="Top" Width="159" FontFamily="Courier New" FontSize="60" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="820,542,0,0" TextWrapping="Wrap" Text="$18.00" VerticalAlignment="Top" Width="66" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="785,536,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-up-48 (1).png"/>
+        <ProgressBar HorizontalAlignment="Left" Height="3" Margin="619,591,0,0" VerticalAlignment="Top" Width="267" SmallChange="1" Value="50" Foreground="#FF7397C1" FontSize="6"/>
+        <hc:CircleProgressBar  ShowText="False" ArcThickness="5" Style="{StaticResource ProgressBarSuccessCircle}" Width="180" Height="180" Margin="950,406,50,194" Value="70" >
+            <hc:CircleProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#FF326CF3"/>
+                    <GradientStop Color="#FF7397C1" Offset="1"/>
+                </LinearGradientBrush>
+            </hc:CircleProgressBar.Foreground>
+        </hc:CircleProgressBar>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="992,475,0,0" TextWrapping="Wrap" Text="7.89" VerticalAlignment="Top" Width="119" FontFamily="Courier New" FontSize="48" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="990,526,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontFamily="Cascadia Mono Light" FontWeight="Bold" Text="WORK-LIFE BALANCE"/>
+        <TextBlock HorizontalAlignment="Left" Height="81" Margin="619,695,0,0" TextWrapping="Wrap" Text="CUSTOM DASHBOARD" VerticalAlignment="Top" Width="220" FontFamily="Cascadia Mono Light" FontSize="36" Foreground="#FF2E2E2E" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="1143,647,0,0" VerticalAlignment="Top" Width="30" Source="/icons8-send-letter-50.png"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="960,748,0,0" TextWrapping="Wrap" Text="10/20 TEMPLATES" VerticalAlignment="Top" Width="213" FontFamily="Cascadia Mono Light" FontSize="18" FontWeight="Bold" TextAlignment="Right" Foreground="#FF2E2E2E"/>
+
+    </Grid>
+</Window>

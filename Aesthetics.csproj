@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1.png" />
+    <None Remove="2.png" />
+    <None Remove="3.png" />
+    <None Remove="amir-esrafili-MH-rzUA0Cw4-unsplash.jpg" />
+    <None Remove="anastasia-mihalkova-rHWnVWrDUto-unsplash.jpg" />
+    <None Remove="bekah-allmark-Qt0ogPnhGWY-unsplash.jpg" />
+    <None Remove="brivel-bariki-W12rukDSuxc-unsplash.jpg" />
+    <None Remove="icons8-menu-67.png" />
+    <None Remove="icons8-send-letter-50 %281%29.png" />
+    <None Remove="icons8-send-letter-50.png" />
+    <None Remove="icons8-up-48 %281%29.png" />
+    <None Remove="rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg" />
+    <None Remove="robbie-down-f3vwAXn7pgg-unsplash.jpg" />
+    <None Remove="simon-lohmann-0KAEhUHvcmQ-unsplash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HandyControls" Version="3.4.5" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1.png" />
+    <Resource Include="2.png" />
+    <Resource Include="3.png" />
+    <Resource Include="amir-esrafili-MH-rzUA0Cw4-unsplash.jpg" />
+    <Resource Include="anastasia-mihalkova-rHWnVWrDUto-unsplash.jpg" />
+    <Resource Include="bekah-allmark-Qt0ogPnhGWY-unsplash.jpg" />
+    <Resource Include="brivel-bariki-W12rukDSuxc-unsplash.jpg" />
+    <Resource Include="icons8-menu-67.png" />
+    <Resource Include="icons8-send-letter-50 (1).png" />
+    <Resource Include="icons8-send-letter-50.png" />
+    <Resource Include="icons8-up-48 (1).png" />
+    <Resource Include="rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg" />
+    <Resource Include="robbie-down-f3vwAXn7pgg-unsplash.jpg" />
+    <Resource Include="simon-lohmann-0KAEhUHvcmQ-unsplash.jpg" />
+  </ItemGroup>
+
+</Project>
